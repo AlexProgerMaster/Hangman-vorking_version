@@ -1,0 +1,3 @@
+2023-01-09 12:09:22;Alex;Honda;B;14
+2023-01-09 13:08:24;rhaaehgesrhg;BMW;B, M, V;9
+2023-01-09 13:15:24;ERRORS;Mercedes;H, B, V, O, E, M;29
