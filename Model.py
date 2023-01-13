@@ -47,13 +47,15 @@ class Model:
             if user_char.lower() in self.new_word.lower():
                 if user_char.upper() in self.user_word:
                     self.counter += 1
-                    self.all_user_chars.append(user_char.upper())
                     # print('error')  # Test
                 self.change_user_input(user_char)
-                print(self.user_word)  # Test
+                # print(self.user_word)  # Test
             else:
-                self.counter += 1
-                self.all_user_chars.append(user_char.upper())
+                if user_char.upper() in self.all_user_chars:
+                    self.counter += 1
+                else:
+                    self.counter += 1
+                    self.all_user_chars.append(user_char.upper())
 
     def change_user_input(self, user_char):
         # Replace all _ with found letter
